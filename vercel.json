@@ -12,26 +12,10 @@
       ]
     },
     {
-      "source": "/(.*)\\.(html)",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }
-      ]
-    },
-    {
       "source": "/(.*)\\.(jpg|jpeg|png|webp|svg|ico)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
-    },
-    {
-      "source": "/(.*)\\.(css|js)",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
-      ]
     }
-  ],
-  "rewrites": [
-    { "source": "/prodentim-review", "destination": "/prodentim-guide-2026.html" },
-    { "source": "/prodentim-review-2026", "destination": "/prodentim-guide-2026.html" }
   ]
 }
